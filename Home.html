@@ -1,0 +1,202 @@
+<html>
+	<title>Home Page</title>
+
+<head>
+<head>
+<link rel="stylesheet" type="text/css" href="Home.css">
+</head>
+</head>
+
+<body>
+<div class="bg-image">
+<div class="menu">
+			
+			<div class="leftmenu">
+				<h4> Ambula</h4>
+			</div>
+
+			<div class="rightmenu">
+				<ul>
+					<li><a href="Home.html">Home </a></li>
+					<li><a href="aboutus.html">About Us </a></li>
+					<li><a href="FAQ.html">Faq </a></li>
+					<li><a href="Form.html">DriverSign </a></li>
+					<li><a href="registerform.html">HospitalRegistration</a></li>
+				</ul>
+			</div>
+
+		</div>
+		
+		
+
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+ 
+  
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="nurse1.jpg"  width="1000" height="420" align="middle">
+    <div class="text"></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="nurse2.jpg"  width="1000" height="420" align="middle">
+    <div class="text"></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="ambulance1.jpg" width="1000" height="420" align="middle">
+    <div class="text"></div>
+  </div>
+  
+  
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+</div>
+
+
+
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+
+<div class="bg-text">
+  
+  <h1 style="font-size:50px">Emergency Transportation</h1>
+  <h2>Knowing Life Matters Since 2016</h2>
+  </div>
+  
+  
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1} 
+  slides[slideIndex-1].style.display = "block"; 
+  setTimeout(showSlides, 10000); // Change image every 2 seconds
+}
+</script>
+
+<div class="bgimg-1">
+  <div class="caption">
+  </div>
+</div>
+
+
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;">The Ambula App & How it works</h3>
+  <p>Ambula is a ride sharing application that will allow instant booking or reservation
+of ambulances to the users through a user-friendly interface. A first of its kind in the country, users can register with
+the app as either drivers or patients. With the aid of google maps and GPS, Ambula
+accesses the user’s location assign them drivers in quick time  </p>
+</div>
+
+<div class="bgimg-2">
+	
+	 <div class="caption8">
+   <span class="border" style="background-color:transparent;font-size:30px;color: #f7f7f7;">
+  	Are You a Patient? <br/> 
+   </span>
+    </div>
+	
+  <div class="caption1">
+  <span class="border" style="background-color:transparent;font-size:30px;color: #f7f7f7;">
+  	Book in Just 2 Taps <br/> 
+  </span>
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">
+  	Key in your pick-up and drop-off prefered Hospital Location and get safe and quikly<br/> 
+  </span>
+  </div>
+  
+   <div class="caption3">
+  <span class="border" style="background-color:transparent;font-size:30px;color: #f7f7f7;">
+  Get an Ambulance
+  <br/> 
+  </span>
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7; left: 15%">
+  	Ambula will find you the nearest available ambulance from your prefered hospital<br/> 
+  </span>
+</div>
+
+   <div class="caption4">
+  <span class="border" style="background-color:transparent;font-size:30px;color: #f7f7f7;">
+Track Your Driver<br/> 
+  </span>
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7; left: 15%">
+  	Know your driver's location and estimated time of arrival in real-time <br/> 
+  </span>
+</div>
+
+</div>
+
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <p>Our research statistics have shown us that a large percentage of the deaths in emergency situations occur 
+  	due to ambulances not being able to reach patients on time. 
+  	We aim to change that by providing our drivers options of 3 routes to the patient's location so that they can decide
+  	the quickest route depending on the traffic.
+  </p>
+</div>
+
+
+<div class="bgimg-3">
+	<div class="caption9">
+   <span class="border" style="background-color:transparent;font-size:30px;color: #f7f7f7;">
+  	Are You a Driver? <br/> 
+   </span>
+    </div>
+  <div class="caption2">
+  <span class="border" style="background-color:transparent;font-size:30px;color: #f7f7f7;">
+  	Update Location every second<br/> 
+  </span>
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7; left: 15%">
+   Provide accurate positions for patients<br/> 
+  </span>
+  </div>
+  
+   <div class="caption6">
+  <span class="border" style="background-color:transparent;font-size:30px;color: #f7f7f7;">
+   View Patient profiles
+  <br/> 
+  </span>
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7; left: 15%">
+  	Get to know your patient's basic info such as blood types<br/> 
+  </span>
+</div>
+
+   <div class="caption7">
+  <span class="border" style="background-color:transparent;font-size:30px;color: #f7f7f7;">
+	Reach your patient in the shortest possible time<br/> 
+  </span>
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7; left: 15%">
+  	Choose the from 3 alternative routes to take the fastest one <br/> 
+  </span>
+</div>
+</div>
+
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <p>The government of India started an Ambulance service called SUWA SARIYA (1990).
+  	They became a partner and thanks to the INDIA & SRILANKA friendship they agree with us to give this service free of charge. Now any one can use emergency access in Ambula and reserve the nearest ambulace.
+  </p>
+</div>
+
+ 
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Contact Us</title>
+		<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="Contact.css">
+		<meta name="author" content="PC VISION" />
+		<!-- Date: 2018-11-08 -->
+		<script type="text/javascript">
+		
+		function formValidate() {
+			
+			var name = document.forms["myForm"]["name"].value;
+			var email = document.forms["myForm"]["email"].value;
+			var message = document.forms["myForm"]["msg"].value;
+			
+			if (isAlphebatic(name)) 
+					if(emailValidation(email)) 
+ 						if (isAlphaNumeric(message))  
+ 						return true;  
+ 					else  
+ 						return false;  
+ 				else  
+ 					return false;  
+ 			else  
+ 				return false;  
+ 				
+ 				}
+
+				function isEmpty(elemValue,field) {  
+				 	if(elemValue =="" || elemValue == null) {  
+				 		alert("You cannot submit " + field + " field empty"); return true;  
+				 	} else
+				 	return false;  
+				 	}
+				 	
+				 	
+				 	function isAlphebatic(elemValue)
+				 	  { 
+				 	var exp = /^[a-zA-Z]+$/;  
+				 	if (!isEmpty(elemValue, "Text fields"))  
+				 	 {  
+				 	if (elemValue.match(exp))
+				 	{  
+				 	return true; 
+				 	} 
+				 	else 
+				 	{
+					 alert("Please use letters"); 
+				 	  return false;  }} 
+				    else
+				 	 return false;
+					 }	
+					 
+					 
+					 function emailValidation(elemValue)
+				 {  
+				 	if (!isEmpty(elemValue, "Email"))  
+				 {  
+				 		var atpos = elemValue.indexOf("@");  
+				 		var dotpos = elemValue.indexOf(".");  
+				 		if (atpos < 1 || dotpos + 2 >= elemValue || atpos + 2 > dotpos)  
+				 {  
+				 	alert("Enter a valid email address");  
+				 	return false;  
+				 }  
+				 	else  
+				 	return true;  
+				 }  
+				 	else  
+				 	return false;  
+				 }
+				 
+				 
+				 function isAlphaNumeric(elemValue)
+				 	{  
+				 	var exp = /^[0-9a-zA-Z]+$/;  
+				 	if (!isEmpty(elemValue, "Text fields"))  
+				 	{  
+				 	if (elemValue.match(exp))  
+				 	return true;  
+				 	else
+				 		{  
+						alert("Please use letters and numbers only"); 
+						return false;  
+				 		}  
+				 	}  
+				 	else  
+				 		return false;  
+				 	}
+		
+		</script>
+	</head>
+	
+	<body>
+		
+		<div class="banner">
+				<h1 style="font-size: 50px">Contact Us</h1>
+		</div>
+		
+
+	</body>
+</html>
+

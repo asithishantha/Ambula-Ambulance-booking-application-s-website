@@ -1,0 +1,90 @@
+body {
+	
+font-family: 'Arimo', sans-serif;	
+color: #000000;
+background-color: #FFFFFF;
+letter-spacing:5px;
+}
+
+section
+{
+	width : 50%;
+	height : 50%;
+}
+
+.tab
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 1600px;
+	text-align: left;
+	font-size: 20px;
+	
+}
+
+.tab1
+{
+	
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-sizing: border-box;
+	padding: 150px 30px;
+	transition: .5s;
+	text-align: left;
+	
+}
+
+.tab1:hover
+{
+	background: #8585CE;
+	box-shadow: 0 0 20px rgba(0,0,0, .2);
+}
+
+.tab input
+{
+	display: block;
+	width: 100%;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	border-radius: 25px;
+	outline: none;
+	font-size: 14px;
+	letter-spacing: 1px;
+	color: #9FA4A2;
+	text-transform: uppercase;
+	border: none;
+	background: #414141;
+}
+
+
+.tab input[type= "submit"]
+{
+	color: #fff;
+	background: #0072ff;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	alignment-adjust: central;
+	position: center;
+	
+}
+.tab input[type= "submit"]: hover
+{
+	background: #005aca;
+}
+
+
+.tab3
+{
+	font-family: 'Arimo', sans-serif;
+	font-size: 35px;
+	text-align: center;
+	top: 20px;
+}
+
+

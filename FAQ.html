@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>FAQ</title>
+		<link rel="stylesheet" type="text/css" href="FAQ.css">
+		<meta name="author" content="PC VISION" />
+		<!-- Date: 2018-11-11 -->
+	</head>
+	
+		<script>
+			function formValidate() {
+
+				var date = document.forms["myForm"]["date"].value;
+				var comment = document.forms["myForm"]["comment"].value;
+				
+				if (isNumeric(date)) 
+					if(isAlphebatic(comment))
+					return true;  
+ 				else  
+ 					return false;  
+ 			else  
+ 				return false; 
+ 				
+ 			}
+				
+				function isEmpty(elemValue,field) {  
+				 	if(elemValue =="" || elemValue == null) {  
+				 		alert("You cannot submit " + field + " field empty"); return true;  
+				 	} else
+				 	return false;  
+				 	}
+				 	
+				 	
+				 	
+				 	function isNumeric(elemValue)  
+				 {  
+				 	if (!isEmpty(elemValue, "Date"))  
+				 {  
+					 var exp = /^[0-9]+$/;  
+				 	if (elemValue.match(exp))  
+				 		return true;  
+				 	else {  
+				 	alert("Please use numbers only");  
+				 	return false;  
+				 	}  
+				 }  
+				 	else  
+				 		return false;  
+				 	}
+				 	
+ 		
+				 function isAlphebatic(elemValue)
+				 	  { 
+				 	var exp = /^[a-zA-Z]+$/;  
+				 	if (!isEmpty(elemValue, "Comment"))  
+				 	 {  
+				 	if (elemValue.match(exp))
+				 	{  
+				 	return true; 
+				 	} 
+				 	else 
+				 	{
+					 alert("Please use letters"); 
+				 	  return false;  }
+				 	  } 
+				    else
+				 	 return false;
+					 }			 		 
+		</script>
+		
+	</head>
+
+		<body>
+			
+		<div class="banner">
+		<div class="para">
+			<h1>want you to give us feedback about your experience of the AMBULA</h1> 
+		</div>
+	
+		</div>
+
+	<div class="sub-topic">
+		<h2>Options available for contacting us with your feedback:</h2>
+	</div>
+	
+	<div class="list">
+		<ul style="circle">
+			<li>In Person: Talk to any staff member of the AMBULA Ambulance Service</li>
+			<li>Online Form: Send your feedback securely through the online feedback form below</li>
+			<li>By Email: E-mail AMBULA Ambulance Service Director with your feedback.</li>
+			<li>By Letter: Send a letter to any AMBULA Ambulance Service location.</li>
+			<li>By phone: 011 882 567: Your call will be answered by a staff member from the AMBULA Ambulance Service.</li>
+			</ul>
+			</div>
+		
+		<div class="form">
+			<div class="form-title">
+				Feedback Form
+				</div>
+				<form name="myForm" onsubmit="return formValidate()">
+					
+				<div class="input-form">
+					
+						<div class="items">
+							
+						<label for="date" class="label">Date</label>
+						
+						<input type="text" class="input" placeholder="DD/MM/YYYY" name="date">
+						</div>
+						
+						<div class="items">
+							
+						<label for="msg" class="label">Comment</label>
+						<textarea class="area" name="comment"> </textarea> </div>
+						
+						</div>
+						<input type="submit" value="Submit" name="submit"/>
+						
+					</form>
+				</div> 
+		</body>
+</html>
+

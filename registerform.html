@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>new_file</title>
+	<link rel="stylesheet" href="registerform.css" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<meta name="author" content="ASUS" />
+	<!-- Date: 2018-12-12 -->
+</head>
+		<body>
+			
+		<script type="text/javascript">
+			
+			function formValidate()  
+			{  	
+				var hospitalname = document.forms["myForm"]["name"].value;
+			 	var address = document.forms["myForm"]["address"].value;
+			  	var contact = document.forms["myForm"]["contact"].value;
+			  	var email = document.forms["myForm"]["email"].value; 
+			    var total = document.forms["myForm"]["tot"].value;
+			    
+			    
+			    	if (isAlphebatic(hospitalname))  
+ 						if (isAlphaNumeric(address))  
+ 							if (isNumeric(contact))   
+ 								if (emailValidation(email))
+ 									if (isNumericx(total))    
+ 											return true;  
+ 										else  
+ 									return true;  
+ 								else  
+ 							return false;  
+ 						else  
+ 					return false;  
+			 	else  
+ 			return false;  
+ 		else  
+ 	return false;  
+
+ 
+
+		} 
+			
+		function isEmpty(elemValue,field) {  
+ 				if(elemValue =="" || elemValue == null) {  
+ 					alert("You cannot have " + field + " field empty"); return true;  
+ 				} else  
+ 				return false;  
+ 				} 
+ 				
+ 				function isAlphebatic(elemValue)
+ 				  { 
+ 				  	 var exp = /^[a-zA-Z]+$/;  
+ 				  	 if (!isEmpty(elemValue, "Hospital Name"))  
+ 				  	 {  
+ 				  	 	if (elemValue.match(exp))
+ 				  	 	 {  
+ 				  	 	 	return true; 
+ 				  	 	 	} 
+ 				  	 	 	 else 
+ 				  	 	 	 {
+ 				  	 	 	 	  alert("Enter valid Name"); 
+ 				  	 	 	 	   return false;  }} 
+ 				  	 	 	 	    else
+ 				  	 	 	 	      return false; 
+ 				 }
+ 				 
+ 
+ function isAlphaNumeric(elemValue)
+ {  
+ 	var exp = /^[0-9a-zA-Z]+$/;  
+ 		if (!isEmpty(elemValue, "Address"))  
+ 		{  
+ 		if (elemValue.match(exp))  
+ 		return true;  
+ 			else
+ 			 {  
+		 alert("Enter only letters and numbers for the Address"); return false;  
+ 		}  
+ 	}  
+ 	else  
+ 		return false;  
+ 	}
+ 	
+ 	function isNumeric(elemValue)  
+ {  
+ 	if (!isEmpty(elemValue, "Contact"))  
+ {  
+	 var exp = /^[0-9]+$/;  
+ 	if (elemValue.match(exp))  
+ 		return true;  
+ 	else {  
+ 	alert("Enter a valid mobile");  
+ 	return false;  
+ 	}  
+ }  
+ 	else  
+ 		return false;  
+ 	}  
+ 	
+ 	function isNumericx(elemValue)  
+ {  
+ 	if (!isEmpty(elemValue, "Total"))  
+ {  
+	 var exp = /^[0-9]+$/;  
+ 	if (elemValue.match(exp))  
+ 		return true;  
+ 	else {  
+ 	alert("Enter a valid number");  
+ 	return false;  
+ 	}  
+ }  
+ 	else  
+ 		return false;  
+ 	}  
+ 	
+ 
+ 
+ 
+ function emailValidation(elemValue)
+ {  
+ 	if (!isEmpty(elemValue, "Email"))  
+ {  
+ 		var atpos = elemValue.indexOf("@");  
+ 		var dotpos = elemValue.indexOf(".");  
+ 		if (atpos < 1 || dotpos + 2 >= elemValue || atpos + 2 > dotpos)  
+ {  
+ 	alert("Enter a valid email address");  
+ 	return false;  
+ }  
+ 	else  
+ 	return true;  
+ }  
+ 	else  
+ 	return false;  
+ } 
+ 
+		</script>
+			
+		
+		<form name="myForm" action="insertr.php" method="post">
+	
+	
+		
+			<div class = "tab ">
+						
+					<div class = "tab1" >
+						
+						<div class="tab3">Application Form
+						
+				<table cellspacing="5px" cellpadding="5px">
+			<tr>
+				<td>
+					Hospital Name
+				</td> 
+				<td>
+					<input type="text" name="name">
+				</td>
+			</tr>
+			
+			<tr>
+				<td>Address</td>
+				<td><input type="text" name="address"></td></tr>
+				
+			<tr>
+				<td>Number</td>
+				<td><input type="text" name="contact"></td></tr>
+
+							
+			<tr>
+				<td>Email</td>
+				<td><input type="text" name="email"/></td></tr>
+					
+			<tr>
+			<td>Number of Ambulances</td>
+				<td><input type="text" name="tot"/></td></tr>
+				
+				
+				<tr>
+					<td><input type="button" name="Submit" value="submit" onclick="paymentform.html"/></td>
+				</tr>
+		
+				</table>
+			</div>
+		</div>
+	</div>
+
+	</form>
+
+	</body>
+</html>
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Form</title>
+		<link rel="stylesheet" type="text/css" href="Form.css">
+		<meta name="author" content="PC VISION" />
+		<!-- Date: 2018-11-01 -->
+		
+		<script>
+		function formValidate() {
+				var username = document.forms["myForm"]["username"].value;
+				var password = document.forms["myForm"]["password"].value;
+				
+				if (userValidation(username, 6, 8))
+										if (passwordvalidation(password))
+									return true;
+							else
+								return false;
+							}
+							
+				function userValidation(elemValue, min, max) {
+				if (!isEmpty(elemValue, "UserName")) {
+					if (elemValue.length >= min && elemValue.length <= max) {
+						return true;
+					} else {
+						alert("User Name must be " + min + " and " + max + " characters");
+						return false;
+					}
+				} else
+					return false;
+			}
+
+		/*	function emailValidation(elemValue) {
+				if (!isEmpty(elemValue, "Email")) {
+					var atpos = elemValue.indexOf("@");
+					var dotpos = elemValue.indexOf(".");
+					if (atpos < 1 || dotpos + 2 >= elemValue.length || atpos + 2 > dotpos) {
+						alert("Enter a valid email address");
+						return false;
+					} else
+						return true;
+				} else
+					return false;
+			} */
+			
+			function passwordValidation(elemValue){
+				if(!isEmpty(elemValue, "password")){
+					
+					
+				}
+			}
+
+
+		</script>
+		
+	</head>
+	<body>
+			
+			<h1>Sign-In</h1>
+			
+		<form name="myform" action ="log.php" method="post" onsubmit="return formValidate()">
+			
+				<div class="input-group">
+					<label>Username</label>
+					<input type="text" name="username" required="">
+					</div>
+					 
+					<div class="input-group">
+					<label>Password</label>
+					<input type="password" name="password" required="">
+					</div>
+					
+					<div class="clearfix">
+					<button type="submit" name="register" class="btn">Sign-In</button>
+					</div>
+					<p>Please fill in this form and sign-in to more functions</p>
+    				<hr>
+					</form>
+	</body>
+</html>
+
+

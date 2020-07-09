@@ -1,0 +1,88 @@
+body{
+	background-repeat: no-repeat;
+	background-size: cover;	
+}
+.header h1
+{
+	font-weight: bold;
+	color: #EBEDEF;
+	font-size: 80px;
+	text-align: center;
+	background-color: rgba(0,0,0,0,7);;
+	height: 100px;
+	box-shadow: 0 0 5px rgba(0,0,0,0,5);
+	border-radius: 0px 0px 10px 10px;
+	color: black;
+}
+.header img
+{
+	float: left;
+	
+}
+.PTC
+{
+	font-size: 25px;
+	color: black;
+}
+.PTC a
+{
+	color: blue;
+}
+.PTC a:hover
+{
+	cursor: pointer;
+	transition: all 0.5s ease;
+}
+.sub-header
+{
+	font-size: 30px;
+	text-align: center;
+	color: #27AE60;	
+}
+.para
+{
+	font-size: 25px;
+	color: black;
+	text-align: center;	
+}
+.list
+{
+	font-size: 20px;
+	color: black;
+	text-align: center;
+	list-style-type: none;
+}
+.btn
+{
+	padding: 5px;
+	font-size: 35px;
+	color: black;
+	background: #5F9EA0;
+	background-size: 5px;;
+	border-radius: 10px;
+	border: none;
+	text-align: center;
+	width: 700px;
+	transform: translate(50%, -1%);
+	cursor: pointer;
+	
+}
+.btn:hover
+{
+	background: #E8F6F3;
+	color: #52BE80;
+}
+.footer
+{
+	background-color: ;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
